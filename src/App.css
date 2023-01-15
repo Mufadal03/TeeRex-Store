@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color :inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+  padding: 0 2rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: cursive;
+  background-color: grey;
+  color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navLeft{
+  display: flex;
+  justify-content: space-between;
+}
+.navLeft>h3{
+  margin: 0 15px;
+}
+.product-container-main{
+  height: auto;
+  margin-bottom: 5rem;
+}
+.searchbar{
+  border: 2px solid deeppink;
+  height: 50px;
+  width: 50%;
+  margin: .5rem auto;
+}
+.product-container{
+  display:flex;
+  gap: 1rem;
+  width: 95%;
+  margin: auto;
+}
+.filter-container{
+  border: 2px solid red;
+  width: 20vw;
+  height: 550px;
+  position: sticky;
+  top: 15vh;
+}
+.products{
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+.card{
+  border: 1px solid rgba(1,1,1,0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
+  padding: 10px;
+  font-family: cursive;
+}
+.prod-img{
+  height: 200px;
+  object-fit: contain;
+}
+.prod-desc{
+  border-top: 1px solid;
+  margin: .4rem 0;
+}
+.add-to-cart>button{
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color:green;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: cursive;
 }
