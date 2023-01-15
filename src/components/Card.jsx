@@ -12,6 +12,7 @@ const Card = (props) => {
               <h3>{name}</h3>
               <p>Gender: {gender}</p>
               <p>type: {type}</p>
+              <p >Color: <span style={{color:color=="White"?'black':`${color}`}}>{ color}</span></p>
               <p>Price: {price}Rs</p>
           </div>
           <div className="add-to-cart">
