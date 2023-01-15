@@ -19,7 +19,7 @@ const Products = () => {
           <div className="product-container">
               <Filters />
               <div className="products">
-                  {products?.length > 0 && products?.map((el, i) => <Card {...el} />)}
+                  {products?.length > 0 && products?.map((el, i) => <Card key={i}{...el} />)}
               </div>
           </div>
     </main>
