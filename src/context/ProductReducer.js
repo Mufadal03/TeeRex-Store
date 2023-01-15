@@ -20,13 +20,13 @@ export const ProductReducer = (state=initialState, { type, payload }) => {
         case "REMOVE_FROM_CART": {
             return {
                 ...state,
-                cart:state.cart.filter((p)=>p.id!=payload)
+                cart:state.cart.filter((p)=>p.id!==payload)
             }
         }
         case "CHANGE_QTY": {
             return {
                 ...state,
-                cart:state.cart.filter((p)=>p.id==payload[0].id?p.cartQuantity=payload[1]:p)
+                cart:state.cart.filter((p)=>p.id===payload[0].id?p.cartQuantity=payload[1]:p)
             }
         }
         default:return state
