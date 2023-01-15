@@ -2,8 +2,9 @@ import React from 'react'
 import "../App.css"
 const SearchBar = () => {
   return (
-              <div className="searchbar">search bar</div>
-
+      <div className="searchbar">
+          <input type="search" placeholder='Search products' />
+     </div>
   )
 }
 
