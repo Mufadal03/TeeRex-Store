@@ -61,10 +61,8 @@ const Products = () => {
 
 
 
-        console.log("result",result)
         return result
     }
-    console.log(filterState)
   return (
       <main className='product-container-main'>
           <SearchBar />

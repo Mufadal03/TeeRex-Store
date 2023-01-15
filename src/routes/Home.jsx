@@ -1,9 +1,12 @@
 import React from 'react'
+import "../App.css"
 const Home = () => {
     
   return (
       <>
-          home
+      <div className="home">
+        <h1>Welcome to Teerex Store</h1>
+        </div>
       </>
   )
 }
