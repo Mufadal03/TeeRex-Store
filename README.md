@@ -1,2 +1,2 @@
 # TeeRex-Store
-Geektrust
+Geektrust-assignment
